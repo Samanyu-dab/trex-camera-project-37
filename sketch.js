@@ -48,10 +48,10 @@ function setup() {
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   
-   gameOver = createSprite(300,100);
+   gameOver = createSprite(50,100);
   gameOver.addImage(gameOverImg);
   
-  restart = createSprite(300,140);
+  restart = createSprite(50,140);
   restart.addImage(restartImg);
   
   gameOver.scale = 0.5;
