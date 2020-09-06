@@ -9,6 +9,7 @@ var cloudsGroup, cloudImage;
 var obstaclesGroup, obstacle1, obstacle2, obstacle3, obstacle4, obstacle5, obstacle6;
 
 var score;
+var back_image;
 
 var gameOverImg,restartImg
 var jumpSound , checkPointSound, dieSound
@@ -19,7 +20,7 @@ function preload(){
   groundImage = loadImage("ground2.png");
   
   cloudImage = loadImage("cloud.png");
-  
+  back_image=loadImage("desert.jpg")
   obstacle1 = loadImage("obstacle1.png");
   obstacle2 = loadImage("obstacle2.png");
   obstacle3 = loadImage("obstacle3.png");
@@ -75,9 +76,10 @@ function setup() {
 
 function draw() {
   
-  background("green");
+  background(back_image);
   //displaying score
   text("Score: "+ score, 500,50);
+  
   camera.position.x = trex.x;
   camera.position.y = trex.y;
   console.log("this is ",gameState)
